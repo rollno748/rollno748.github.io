@@ -1,0 +1,22 @@
+---
+layout: null
+sitemap:
+exclude: 'yes'
+---
+
+/* TEAM */
+    Name: Mohamed Ibrahim
+    Site: https://aliesbelik.github.io
+    Location: Edinburgh, United Kingdom
+
+/* THANKS */
+    Name: Josh Gerdes
+    Site: https://github.com/joshgerdes/jekyll-uno
+
+/* SITE */
+    Last update: {{ site.time }}
+    Revision: {{ site.github.build_revision }}
+    Language: English
+    Standards: HTML5, CSS3
+    Components: Jekyll
+    Software: Sublime Text
