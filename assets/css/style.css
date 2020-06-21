@@ -4,9 +4,10 @@ div{
 }
 .jumbotron
 {
-    background-image: url(../images/bg-2.jpg); 
-    background-attachment: fixed; 
-    background-size: cover; 
+    background-image: url(../images/bg-06.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
     /*background-position: 0 -200px; */
     height: 700px; background-repeat: no-repeat;
 }
@@ -19,7 +20,7 @@ div{
     margin-bottom: 30px;
 }
 .work-ex
-{   
+{
     margin-top: 20px;
     margin-bottom: 50px;
 }
@@ -36,7 +37,7 @@ div{
     color: rgba(0,0,0,0.3);
     font-size: 14px;
     margin-top: 6px;
-    margin-left: 5px; 
+    margin-left: 5px;
 
 }
 .work .perusahaan
@@ -114,7 +115,7 @@ div{
 }
 /* =======================================================
 *
-*   Template Style 
+*   Template Style
 *
 * ======================================================= */
 body {
@@ -1256,8 +1257,8 @@ input[type="text"] {
 }
 
 #fh5co-skills{
-    /* background-image: url(../images/bg-2.jpg); 
-    background-attachment: fixed; 
+    /* background-image: url(../images/bg-01.jpg);
+    background-attachment: fixed;
     background-size: cover; */
     /*background-position: 0 -200px; */
     /*height: 700px; background-repeat: no-repeat;*/
