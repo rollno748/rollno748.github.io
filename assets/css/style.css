@@ -4,10 +4,10 @@ div{
 }
 .jumbotron
 {
-    background-image: url(../images/bg-06.jpg);
+    background-image: url(../images/bg-00.jpg);
     background-attachment: fixed;
     background-size: cover;
-    
+
     /*background-position: 0 -200px; */
     height: 700px; background-repeat: no-repeat;
 }
@@ -248,16 +248,11 @@ h1, h2, h3, h4, h5, h6, figure {
   color:#fff;
   padding: 4px 15px;
   position: relative;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   margin-bottom: 30px;
   font-size: 50px;
   line-height: 1.3;
   font-weight: 300;
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  transform: rotate(-5deg);
 }
 
 .display-tc h3 {
