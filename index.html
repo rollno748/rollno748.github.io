@@ -1,30 +1,495 @@
----
-layout: default
-robots: noindex
----
+<html>
 
-<div class="main-post-list">
+    <head>
 
-  <ol class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
-        <div class="post-list__meta">
-            <time datetime="{{ post.date | date: "%Y-%m-%d %H:%M" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time>
-            {% if post.tags.size > 0 %}
-            &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
-            {% endif %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <title>Mohamed Ibrahim</title>
+        <meta name="description" content="Mohamed Ibrahim - CV/Resume" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="rollno748" />
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content="Performance Engineer"/>
+        <meta property="og:image" content="assets/images/ibm.jpg"/>
+        <meta property="og:url" content="https://rollno748.github.io"/>
+        <meta property="og:site_name" content="my-resume"/>
+        <meta property="og:description" content="Mohamed Ibrahim"/>
+
+        <meta name="twitter:title" content="Stay humble, smile more" />
+        <meta name="twitter:image" content="assets/images/ibrahim.jpg" />
+        <meta name="twitter:url" content="https://twitter.com/IBM748" />
+        <meta name="twitter:card" content="assets/images/ibm.jpg"" />
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script|Space+Mono">
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!-- Modernizr JS -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="jumbotron text-center">
+            <div class="profile display-tc js-fullheight animate-box" style="margin-top: 70px;">
+                 <a href="" class="lightbox"><img src="assets/images/ibm.jpg" alt="" class="img-fluid rounded-circle " style="width: 270px; height: 270px; background-size: cover;"></a><br>
+                <div  class="display-tc">
+                        <h1><span>Mohamed Ibrahim</span></h1>
+                    <h3><span id="typed5"></span></h3>
+                </div>
+                <div class="animated fadeInRight">
+                    <a href="https://www.linkedin.com/in/rollno748" class="btn btn-outline-light" target="_blank"><i class="fa fa-linkedin fa-fw" style="font-size: 27px;"></i></a>
+                    <a href="https://github.com/rollno748" class="btn btn-outline-light" target="_blank"><i class="fa fa-github fa-fw" style="font-size: 27px;"></i></a>
+                    <a href="mailto:rollno748@gmail.com" class="btn btn-outline-light" target="_blank"><i class="fa fa-envelope fa-fw" style="font-size: 27px;"></i></a>
+                    <a href="https://www.facebook.com/rollno748" class="btn btn-outline-light" target="_blank"><i class="fa fa-facebook fa-fw" style="font-size: 27px;"></i></a>
+                    <!--<a href="https://www.twitter.com/ibm748" class="btn btn-outline-light" target="_blank"><i class="fa fa-twitter fa-fw" style="font-size: 27px;"></i></a>-->
+                </div>
+            </div>
         </div>
-        <hr class="post-list__divider">
-      </li>
-    {% endfor %}
-  </ol>
 
-  <hr class="post-list__divider ">
+        <!-- Jumbotron -->
 
-  {% if paginator.previous_page or paginator.next_page %}
-      {% include pagination.html %}
-  {% endif %}
+        <div class="container">
+            <div class="col-sm-12">
+                <div id="fh5co-about" class="animate-box">
+                    <div class="row">
+                        <div class="col-md-12 col-md-offset-2 text-center fh5co-heading">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2>Hello There!</h2>
+                            <p>
+                              Myself Mohamed Ibrahim, I hold around 8 years of Extensive experience focused completely on Software Performance Engineering as well as testing on various distributed technologies.
+					                         My Expertise are Performance engineering, Java Performance tuning, JMeter, LoadRunner, Neoload, APM tools, Capacity and Bottleneck identification of large distributed systems.
+                            </p>
+                            <ul class="fh5co-social-icons">
+                                <li><a href="https://www.linkedin.com/in/rollno748/"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="mailto:rollno748@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                                <li><a href="https://rollno748.github.io/"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                        <br>
 
-</div>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="lightbox"><img src="assets/images/ibm_profile.jpg" alt="" class="img-fluid img-thumbnail " style="width: 330px; height: 410px; border: 20px solid #dee2e6; border-radius: 2.25rem; background-size: cover;"></a><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fh5co-resume" class="fh5co-bg-color">
+                    <div class="row animate-box">
+                        <div class="col-md-12 col-md-offset-2 text-center fh5co-heading">
+                            <h2>Career Path</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-md-offset-0">
+                            <ul class="timeline">
+
+                                <li class="timeline-heading text-center animate-box">
+                                    <div><h3>Professional Experience</h3></div>
+                                </li>
+
+                                 <li class="timeline-inverted animate-box">
+                                    <div class="timeline-badge"><i class="fa fa-suitcase"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h3 class="timeline-title">CoE Performance Engineer</h3>
+                                            <span class="company">Edinburgh, Scotland, UK - 2018 - current</span>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Performance Bottleneck identification, Performance framework to suuport agile model, CoE tools, Customized Plugins for Jmeter, etc..</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="animate-box timeline-unverted">
+                                    <div class="timeline-badge"><i class="fa fa-suitcase"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h3 class="timeline-title">Senior Performance Engineer</h3>
+                                            <span class="company">Envestnet Yodlee - 2017 - 2018</span>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Consulting needs and problems that mass you to us and get a solution, planning and strategy suitable to your needs. By planning and strategies appropriate expected to help you get the appropriate notwithstanding aspects of business process and to reduce financing.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="timeline-inverted animate-box">
+                                    <div class="timeline-badge"><i class="fa fa-suitcase"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h3 class="timeline-title">Senior Performance Test Engineer</h3>
+                                            <span class="company">Wipro Technologies - 2013 - 2017</span>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Specialized in LoadRunner, Neoload and Jmeter</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <br>
+
+                                <li class="timeline-heading text-center animate-box">
+                                    <div><h3>Education</h3></div>
+                                </li>
+
+                                <li class="timeline-inverted animate-box">
+                                    <div class="timeline-badge"><i class="fa fa-graduation-cap"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h3 class="timeline-title">Masters</h3>
+                                            <span class="company">Anna University - 2007 - 2012</span>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                                Software engineering Major
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- container -->
+
+        <div id="fh5co-features" class="animate-box ">
+            <div class="container">
+                <div class="services-padding">
+                    <div class="row">
+                        <div class="col-md-12 col-md-offset-2 text-center fh5co-heading">
+                            <h2>My Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <div class="feature-left">
+                                <span class="icon">
+                                    <i class="fa fa-line-chart"></i>
+                                </span>
+                                <div class="feature-copy">
+                                    <h3>Performance Engineering</h3>
+                                    <p>Expertise knowledge on Java application profiling, bottleneck identification, tuning. Vast experience with Bigdata performance testing and engineering.</p>
+                                    <p>Created customized plugins to test flume, Kafka, HDFS, hive and many more</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 text-center">
+
+                            <div class="feature-left">
+                                <span class="icon">
+                                    <i class="fa fa-building"></i>
+                                </span>
+                                <div class="feature-copy">
+                                    <h3>Corporate Training</h3>
+                                    <p>Happy to help and train Performance Engineers in achieving product goals, Effcient way to analyse and identify root cause.</p>
+                                    <p>Can help the corporate to achieve 100% successfull E2E automation on Performance testing and engineering</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 text-center">
+                            <div class="feature-left">
+                                <span class="icon">
+                                    <i class="fa fa-battery-half"></i>
+                                </span>
+                                <div class="feature-copy">
+                                    <h3>Freelancing</h3>
+                                    <p>Well! I am open for free time work as freelancer. Hit me up on my mail or WhatsApp to discuss !</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <!-- <div class="col-md-4 text-center">
+                            <div class="feature-left">
+                                <span class="icon">
+                                    <i class="icon-mobile"></i>
+                                </span>
+                                <div class="feature-copy">
+                                    <h3>Mobile Application (not yet available )</h3>
+                                    <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+                                </div>
+                            </div>
+
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+             <div id="fh5co-work" class="">
+                <div class="container">
+                    <div class="row animate-box">
+                        <div class="col-md-12 col-md-offset-2 text-center fh5co-heading">
+                            <h2>My Works</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 text-center col-padding animate-box">
+                            <a href="#" class="work" style="background-image: url(assets/images/bg-01.jpg);">
+                                <div class="desc">
+                                    <h3>Unleashing the power of Jmeter as Load Testing tool</h3>
+                                    <span>Learn to use Jmeter the Expert way</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 text-center col-padding animate-box">
+                            <a href="#" class="work" style="background-image: url(assets/images/bg-pubsub.png);">
+                                <div class="desc">
+                                    <h3>Test GCP PubSub with Jmeter</h3>
+                                    <span>My Own GCP PubSub plugin to load test GCP distributed systems</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 text-center col-padding animate-box">
+                            <a href="#" class="work" style="background-image: url(assets/images/bg-07.jpg);">
+                                <div class="desc">
+                                    <h3>Monitoring Jmeter like an Expert</h3>
+                                    <span>The Power of open source Monitoring - Using My Own InfluxDB Plugin</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 text-center col-padding animate-box">
+                            <a href="#" class="work" style="background-image: url(assets/images/bg-7.jpg);">
+                                <div class="desc">
+                                    <h3>Training Center</h3>
+                                    <span>CodeIgniter</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 text-center col-padding animate-box">
+                            <a href="#" class="work" style="background-image: url(assets/images/bg-06.jpg);">
+                                <div class="desc">
+                                    <h3>Learn to load test Kafka like a pro</h3>
+                                    <span>Using our improved, Multi feature supported kafka-load plugin</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 text-center col-padding animate-box">
+                            <a href="https://github.com/rollno748" class="work" style="background-image: url(assets/images/github.png);">
+                                <div class="desc">
+                                    <h3>Get me on Github</h3>
+                                    <span>Github</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fh5co-skills" class="animate-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-md-offset-2 text-center fh5co-heading">
+                            <h2 style="color: #fff">My Skills</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6" >
+                            <div class="skill card animated slideInLeft">
+                                <h5>Hard Skills</h5>
+                                <span class="title-skill">JMeter</span>
+                                <div class="progress" >
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:90%; ">
+                                    </div>
+                                </div>
+                                <span class="title-skill">LoadRunner</span>
+                                <div class="progress" >
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:80%; ">
+                                    </div>
+                                </div>
+                                <span class="title-skill">Neoload</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:75%; ">
+                                    </div>
+                                </div>
+                                <span class="title-skill">CI/CD</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:80%; ">
+                                    </div>
+                                </div>
+                                <span class="title-skill">Performance Framework</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:90%; ">
+                                    </div>
+                                </div>
+                                <span class="title-skill">AppDynamics</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:85%; ">
+                                    </div>
+                                </div>
+                                <span class="title-skill">DynaTrace</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:90%; ">
+                                    </div>
+                                </div>
+                                <span class="title-skill">Oracle</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:70%; ">
+                                    </div>
+                                </div>
+                                <span class="title-skill">Couchbase</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:75%; ">
+                                    </div>
+                                </div>
+                                <span class="title-skill">Java tuning</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:85%; ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- col-sm-6 -->
+                        <div class="col-sm-6">
+                            <div class="skill card animated slideInRight">
+                                <h5>Soft Skills</h5>
+                                <span class="title-skill">Leadership</span>
+                                <div class="progress" >
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:80%; ">
+                                    </div>
+                                </div>
+                                <span class="title-skill">Teamwork</span>
+                                <div class="progress" >
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:90%; ">
+                                    </div>
+                                </div>
+                                <span class="title-skill">Flexibility</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="95"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:95%; ">
+                                    </div>
+                                </div>
+                                <span class="title-skill">Ability to Communicate</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:90%; ">
+                                    </div>
+                                </div>
+                                <span class="title-skill">Problem Solving</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:85%; ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- row -->
+                </div>
+            </div>
+
+             <div id="fh5co-blog" class="animate-box">
+                <div class="container">
+                    <div class="row animate-box">
+                    <div class="col-md-12 col-md-offset-2 text-center fh5co-heading">
+                        <h2>Quotes</h2>
+                        <p>
+                            " The best among you is the one who doesn’t harm others with his tongue and hands. "
+                            - Prophet Muhammed
+                        </p>
+                    </div>
+                    </div>
+                </div>
+             </div>
+
+             <div id="fh5co-started" class="fh5co-bg-dark">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row animate-box">
+                        <div class="col-md-12 col-md-offset-2 text-center fh5co-heading">
+                            <h2>Get Me on Whatsapp!</h2>
+                            <p>Pop in a message for any queries. You are most welcome to build a relationship !</p>
+                            <p><a href="http://api.whatsapp.com/send?phone=+919840995313&text=Hey Mohamed, Just came across your profile on Github" class="btn btn-default">Whatsapp now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div id="fh5co-footer" style="padding-bottom: 0;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p style="font-size: 13px;">&copy;  All Rights Reserved.  <span class="" style="font-weight: 500;">Made with <i class="fa fa-heart" style="color: #333;"></i> recompiled by <a href="https://github.com/rollno748">Ibrahim</a> </span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gototop js-top">
+                <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+            </div>
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+
+        <!-- jQuery Easing -->
+        <script src="js/jquery.easing.1.3.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js"></script>
+
+        <!-- Stellar Parallax -->
+        <script src="js/jquery.stellar.min.js"></script>
+
+        <!-- Easy PieChart -->
+        <script src="js/jquery.easypiechart.min.js"></script>
+
+        <!-- Google Map -->
+
+        <!-- Main -->
+        <script src="js/main.js"></script>
+
+        <script src="js/typed.min.js"></script>
+
+        <script>
+            var typed5 = new Typed('#typed5', {
+                strings: ['Performance Engineer'],
+                typeSpeed: 115,
+                backSpeed: 60,
+                cursorChar: '_',
+                smartBackspace: false,
+                loop: true
+            });
+        </script>
+
+        <!-- <script type="text/javascript" src="assets/js/jquery.min.js"></script> -->
+
+    </body>
+
+</html>
