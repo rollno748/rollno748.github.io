@@ -1,7 +1,7 @@
 # Mohamed Ibrahim
 
 ## Introduction
-E-resume to show it as website.
+E-resume to show it as website (Model -2)
 
 ## Installation Instructions
 
