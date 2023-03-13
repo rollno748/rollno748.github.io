@@ -1165,8 +1165,8 @@ section .container {
 /*--------------------------------------------------------------
 # Credits
 --------------------------------------------------------------*/
-.credits {
-  position: fixed;
+.copyright {
+  position: flex;
   right: 0;
   left: 0;
   bottom: 0;
