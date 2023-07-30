@@ -55,6 +55,10 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+h4 {
+  color: #4ceb95
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -378,7 +382,7 @@ section .container {
   margin: 0 0 20px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: #4ceb95;
   font-family: "Poppins", sans-serif;
 }
 
